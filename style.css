@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica"),
+    url("helvetica-light-587ebe5a59211.woff") format("woff");
+}
+
+/* @font-face {
+  font-family: "Helvetica Oblique";
+  font-style: oblique;
+  font-weight: 200;
+  src: local("Helvetica Oblique"), url("Helvetica-Oblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Compressed";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Helvetica Compressed"),
+    url("helvetica-compressed-5871d14b6903a.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Rounded Bold";
+  font-style: rounded;
+  font-weight: 400;
+  src: local("Helvetica Rounded Bold"),
+    url("helvetica-rounded-bold-5871d05ead8de.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  font-style: bold;
+  font-weight: bold;
+  src: local("Helvetica"), url("Helvetica-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Bold Oblique";
+  font-style: oblique;
+  font-weight: bolder;
+  src: local("Helvetica Bold Oblique"),
+    url("Helvetica-BoldOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Light";
+  font-style: light;
+  font-weight: lighter;
+  src: local("Helvetica Light"),
+    url("helvetica-light-587ebe5a59211.woff") format("woff");
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  background-color: #fcf5eb;
+}
+
+.navbar {
+  display: flex;
+  margin: 0 3%;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+}
+
+.link {
+  margin: 10px 0 0 0;
+  text-decoration: none;
+  color: black;
+  text-decoration: none;
+  justify-self: center;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+}
+
+.link {
+  font-size: 17px;
+  margin: 10px;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+}
+
+.material-symbols-outlined {
+  line-height: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.down {
+  rotate: -90deg;
+  font-family: Material Symbols Outlined;
+}
+
+button {
+  padding: 15px 25px;
+  border-radius: 60px;
+  border: 1px solid black;
+  margin: 0 6px;
+  font-family: Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+.login {
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.login:hover {
+  color: white;
+  background-color: white;
+}
+
+.login:after {
+  content: "";
+  background: black;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+.login:hover:after {
+  transform: skewX(180deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 1s;
+}
+
+.download {
+  background: #25d366;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.download:hover {
+  color: white;
+  background-color: #25d366;
+}
+
+.download:after {
+  content: "";
+  background: black;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 1s;
+}
+
+.download:hover:after {
+  transform: skewX(180deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 1s;
+}
+
+#back-pic-pad {
+  margin: 0 3%;
+}
+
+#hero {
+  background: url("https://scontent.whatsapp.net/v/t39.8562-34/316546300_547692113846445_7299710494491288098_n.png?stp=dst-webp&ccb=1-7&_nc_sid=73b08c&_nc_ohc=OckOZcczhBIQ7kNvwEH0sCz&_nc_oc=Adk7_KTEahmp-8h_S6tdAGJURrxtsGPAMTbgUEwC-HvXjLAcVjk8uNRFTkbrbY_YEHg&_nc_zt=3&_nc_ht=scontent.whatsapp.net&_nc_gid=dPQg66BLalivik2_D7-vSQ&oh=01_Q5Aa3AEdMWECffHQJBTsT-4IjSz347ZYCKFuwHnOCCnIJNlwPQ&oe=6913C0A5");
+  background-size: cover;
+  height: 85vh;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6%;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 0;
+}
+
+.floating {
+  display: flex;
+  flex-direction: column;
+}
+
+.floating img {
+  width: 400px;
+  position: relative;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  width: 350px;
+}
+
+.head {
+  font-size: 90px;
+  margin: 0;
+}
+
+.read {
+  font-size: 20px;
+}
+
+.below-txt {
+  font-size: small;
+  color: rgba(71, 68, 68, 0.795);
+  text-align: end;
+}
+
+.desk {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 3%;
+}
+
+.desk-txt {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ttl {
+  font-size: 55px;
+  margin: 0;
+}
+
+.never {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+}
+
+.mbl-txt {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
