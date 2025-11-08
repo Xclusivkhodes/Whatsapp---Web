@@ -89,22 +89,26 @@ li {
 
 ul {
   margin: 0;
+  padding: 0;
 }
 
 .link {
   font-size: 17px;
   margin: 10px;
+  border-bottom: 0px solid #25d366;
+}
+
+.link-adj {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-self: start;
+  padding: 0;
 }
 
 span {
   margin: 0;
   padding: 0;
-}
-
-.material-symbols-outlined {
-  line-height: 0;
-  font-family: inherit;
-  font-size: inherit;
 }
 
 .down {
@@ -263,13 +267,12 @@ button {
 
 .never {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 3%;
 }
 
-.mbl-txt {
-  width: 400px;
+.mbl-text {
+  width: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
